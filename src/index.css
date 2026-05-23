@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #020617;
+  color: #f8fafc;
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+.text-gradient {
+  background: linear-gradient(95deg, #eab308 0%, #facc15 45%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: linear-gradient(160deg, rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.55));
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 16px 40px rgba(2, 6, 23, 0.45);
+}
+
+.section-eyebrow {
+  color: #eab308;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.74rem;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 2.4vw, 3.75rem);
+  line-height: 1.05;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.section-line {
+  width: 6rem;
+  height: 0.2rem;
+  background: #eab308;
+}
+
+.metric {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 2.8vw, 2.9rem);
+  font-weight: 900;
+  color: #eab308;
+}
+
+.metric-label {
+  margin-top: 0.35rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  animation: fade-up 0.8s ease forwards;
+}
+
+.reveal-delayed {
+  opacity: 0;
+  transform: translateY(26px);
+  animation: fade-up 0.8s ease 0.2s forwards;
+}
+
+@keyframes fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

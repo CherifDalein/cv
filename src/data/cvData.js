@@ -5,7 +5,7 @@ export const profile = {
   role: "Developpeur Full Stack & IA",
   availability: "Disponible pour stage",
   email: "mcd2020etude@gmail.com",
-  phone: "+33 07 49 73 75 12",
+  phone: "+33 7 49 73 75 12",
   phoneHref: "tel:+33749737512",
   location: "Clermont-Ferrand, France",
   mobility: "Toute la France",
